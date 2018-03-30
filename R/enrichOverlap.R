@@ -132,7 +132,7 @@ enrichPeakOverlap <- function(queryPeak, targetPeak, TxDb=NULL, pAdjustMethod="B
     } else {
         res_list <- lapply(1:length(targetFiles), function(i) {
             enrichPeakOverlap(queryPeak = queryPeak,
-                              targetPeak = targetFiles[i],
+                              targetPeak = target.gr[i],
                               TxDb = TxDb,
                               pAdjustMethod = pAdjustMethod,
                               nShuffle = nShuffle,
